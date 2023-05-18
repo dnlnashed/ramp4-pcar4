@@ -406,7 +406,7 @@ export class CommonLayer extends LayerInstance {
         this.$iApi.notify.show(
             NotificationType.ERROR,
             this.$iApi.$i18n.t('layer.error', {
-                id: this.id
+                id: this.name === '' ? this.id : this.name
             })
         );
         this.stopTimer(TimerType.DRAW);
@@ -906,7 +906,7 @@ export class CommonLayer extends LayerInstance {
                     this.$iApi.notify.show(
                         NotificationType.WARNING,
                         this.$iApi.$i18n.t(`layer.long${type}`, {
-                            id: this.id
+                            id: this.name === '' ? this.id : this.name
                         })
                     );
                 }
