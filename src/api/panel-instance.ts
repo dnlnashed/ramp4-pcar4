@@ -292,6 +292,7 @@ export class PanelInstance extends APIScope {
      * Move this panel left or right in the stack.
      * This is a proxy to `InstanceAPI.panel.move(...)`.
      *
+     * @param {(string)} direction Valid values are 'right' and 'left'
      * @returns {this}
      * @memberof PanelInstance
      */

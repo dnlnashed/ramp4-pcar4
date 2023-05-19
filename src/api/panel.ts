@@ -276,6 +276,7 @@ export class PanelAPI extends APIScope {
      * Moves the specifed visible panel to the left or right.
      *
      * @param {(string | PanelInstance)} value
+     * @param {(string)} direction Valid values are 'right' and 'left'
      * @returns {PanelInstance}
      * @memberof PanelAPI
      */
