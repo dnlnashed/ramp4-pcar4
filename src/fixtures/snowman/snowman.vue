@@ -1,6 +1,6 @@
 <template>
     <div class="absolute top-0 right-0" ref="el">
-        <img style="width: 250px" :src="url" alt="Snowman" srcset="" />
+        <img style="width: 250px" src="https://cdn-icons-png.flaticon.com/512/3753/3753642.png" alt="Snowman" srcset="" />
     </div>
 </template>
 
@@ -18,7 +18,7 @@ const props = defineProps({
 
 const el = ref();
 
-const url = ref('https://i.ya-webdesign.com/images/evil-snowman-png-1.png');
+//const url = ref('https://cdn-icons-png.flaticon.com/512/3753/3753642.png');
 
 onMounted(() => {
     // console.log(this.message);
